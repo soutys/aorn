@@ -5,11 +5,16 @@ branches:
 language: python
 python:
   - "2.7"
-  - "3.2"
-  - "3.3"
   - "3.4"
   - "nightly"
 
-install: true
+install:
+  - pip install -U -r test_requirements.txt --use-mirrors
 
-script: python -V
+before_script:
+  - pip install -e . --use-mirrors
+script:
+  - py.test tests --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+after_success:
+  - coveralls
+
