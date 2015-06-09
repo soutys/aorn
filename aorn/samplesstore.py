@@ -39,7 +39,7 @@ class SamplesStore(object):
                 fd_obj.close()
         else:
             fd_obj = sys.stdin
-            if hasattr(fd_obj, 'buffer'): # pragma: no cover
+            if hasattr(fd_obj, 'buffer'):  # pragma: no cover
                 fd_obj = fd_obj.buffer
             str_obj = True
             while str_obj:

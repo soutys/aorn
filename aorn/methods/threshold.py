@@ -30,7 +30,7 @@ class Threshold(ANTest):
         if 0.0 < self.level < 1.0:
             self.level *= THR_MAX
         if not 0 < self.level < THR_MAX:
-            raise RuntimeError('Bad threshold value. Got: {!r},' \
+            raise RuntimeError('Bad threshold value. Got: {!r},'
                 ' valid: (1, {}) or (0.0, 1.0)'.format(self.level, THR_MAX - 1))
 
 

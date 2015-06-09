@@ -10,6 +10,7 @@ from aorn.methods.antest import ANTest
 
 class SampleTest(ANTest):
     __doc__ = ''
+
     def analyze(self, _):
         pass
 

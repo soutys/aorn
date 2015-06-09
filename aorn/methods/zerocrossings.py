@@ -25,7 +25,7 @@ class ZeroCrossings(ANTest):
             raise RuntimeError('No threshold value param')
         self.level = float(args[0])
         if not 0.0 < self.level < 1.0:
-            raise RuntimeError('Bad threshold value. Got: {!r},' \
+            raise RuntimeError('Bad threshold value. Got: {!r},'
                 ' valid: (0.0, 1.0)'.format(self.level))
 
 

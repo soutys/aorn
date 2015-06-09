@@ -9,12 +9,12 @@ python:
   - "nightly"
 
 install:
-  - pip install -U -r test_requirements.txt --use-mirrors
+  - pip install -U -r test_requirements.txt
 
 before_script:
-  - pip install -e . --use-mirrors
+  - pip install -U -e .
 script:
-  - py.test tests --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - py.test tests --doctest-modules --pep8 aorn -v --cov aorn --cov-report term-missing
 after_success:
   - coveralls
 
