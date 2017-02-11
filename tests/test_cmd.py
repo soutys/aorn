@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-'''Samples storage module tests
+'''Commandline module tests
 '''
 
 from __future__ import with_statement, division, absolute_import, print_function

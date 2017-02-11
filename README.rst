@@ -43,4 +43,5 @@ TODO
 
 - better algos/methods;
 - in-tests package builder (see `vaab/colour <https://github.com/vaab/colour/blob/master/.travis.yml>`);
+- spectrum substract method
 
